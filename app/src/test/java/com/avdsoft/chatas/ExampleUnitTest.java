@@ -1,4 +1,4 @@
-package com.avd.androiddev.a313mychat;
+package com.avdsoft.chatas;
 
 import org.junit.Test;
 

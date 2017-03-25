@@ -1,4 +1,4 @@
-package com.avd.androiddev.a313mychat;
+package com.avdsoft.chatas;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

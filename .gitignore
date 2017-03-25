@@ -3,7 +3,7 @@
 /local.properties
 /.idea
 /.idea/workspace.xml
-/.idea/vcs.xml.xml
+/.idea/vcs.xml
 /.idea/libraries
 .DS_Store
 /app/build
@@ -14,3 +14,4 @@
 .classpath
 /.settings
 /app/.settings
+app/libs/
