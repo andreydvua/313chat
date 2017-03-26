@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/photo_user_in"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_bird"
+        android:visibility="visible"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/photo_user_in"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_toast_l"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="... some Nickname"
+                android:textColor="@color/colorBGend"
+                android:textColorHint="@color/colorHintSignIn"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/userMessage_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="... some text  , ,sdv"
+                android:textColor="@color/colorBGend"
+                android:textColorHint="@color/colorBGend"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timeStamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="time a go"
+            android:textColor="@color/colorHintSignIn"
+            android:textColorHint="@color/colorHintSignIn"
+            android:textSize="6sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
