@@ -16,14 +16,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:background="0"
-            android:src="@drawable/ic_arrow_back_black_24dp" />
+            android:background="@drawable/ic_arrow_back_black_24dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="CHAT"
+            android:text="@string/chat"
             android:textAlignment="center"
             android:textColor="@color/colorBGend"
             android:textSize="18sp"
@@ -34,23 +33,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:background="0"
-            android:src="@drawable/ic_menu_black_24dp" />
+            android:background="@drawable/ic_menu_black_24dp" />
 
     </LinearLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/enter_message_LinerLayout">
-
-        <LinearLayout
-            android:id="@+id/chat_wraper"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="2dp"
-            android:orientation="vertical"></LinearLayout>
-    </ScrollView>
 
     <LinearLayout
         android:id="@+id/enter_message_LinerLayout"
@@ -67,11 +52,24 @@
             android:layout_weight="1" />
 
         <ImageButton
+            android:id="@+id/send_btn"
             android:layout_width="42dp"
             android:layout_height="42dp"
             android:layout_margin="2dp"
-            android:background="0"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_send" />
+            android:background="@drawable/ic_send"
+            android:scaleType="centerCrop" />
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/enter_message_LinerLayout">
+
+        <LinearLayout
+            android:id="@+id/chat_wraper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>
 </RelativeLayout>
