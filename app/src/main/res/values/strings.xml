@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">313myChat</string>
+    <string name="app_name">313 ChatAS</string>
+    <string name="loading">Loading ...</string>
+    <string name="fullname_or_nickname">... use your Name or Nickname</string>
+    <string name="your_password">... your password</string>
+    <string name="don_t_have_account">Don\'t have account ?</string>
+    <string name="sign_up">Sign UP</string>
+    <string name="sign_in">Sign IN</string>
 </resources>
