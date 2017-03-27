@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/custom_actionBar"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_gravity="top"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/chat_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/profile"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBGend"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/chat_menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_menu_black_24dp" />
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userPhoto_CirclImageView"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_perm_identity_24dp"
+        app:civ_border_color="@color/colorHintSignIn"
+        app:civ_border_width="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_actionBar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPhoto_CirclImageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:minWidth="480dp"
+            android:orientation="vertical">
+
+            <EditText
+
+                android:id="@+id/userName_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="6dp"
+                android:enabled="false"
+                android:hint="Enter Fullname"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorHintSignIn"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/userEmail_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="6dp"
+                android:enabled="false"
+                android:hint="Enter e-mail"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorHintSignIn"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/userBD_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="6dp"
+                android:enabled="false"
+                android:hint="Birthday date"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorHintSignIn"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/userDescr_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="6dp"
+                android:enabled="false"
+                android:hint="Who you are ?"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorHintSignIn"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/gender_RadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Male"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Female"
+                    android:textColor="@color/colorAccent" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/change_pass_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/tap_for_change_your_pass"
+                android:textColor="@color/colorPrimaryDark"
+                android:typeface="serif"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/save_btn_Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_text_view"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="@string/save"
+                android:textColor="@color/colorBGend" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
