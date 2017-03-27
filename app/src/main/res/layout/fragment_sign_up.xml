@@ -46,133 +46,148 @@
         android:layout_width="96dp"
         android:layout_height="96dp"
         android:layout_marginTop="8dp"
-        android:src="@drawable/ic_bird"
+        android:src="@drawable/ic_perm_identity_24dp"
         app:civ_border_color="@color/colorPrimaryDark"
         app:civ_border_width="2dp" />
 
-    <EditText
-        android:id="@+id/userName_EditText"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="6dp"
-        android:hint="Enter Fullname"
-        android:textAlignment="center"
-        android:textColorHint="@color/colorHintSignIn"
-        android:textSize="16sp" />
+        android:layout_height="match_parent" >
 
-    <EditText
-        android:id="@+id/userEmail_EditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="6dp"
-        android:hint="Enter e-mail"
-        android:inputType="textEmailAddress"
-        android:textAlignment="center"
-        android:textColorHint="@color/colorHintSignIn"
-        android:textSize="16sp" />
-
-    <EditText
-        android:id="@+id/userPass_EditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="6dp"
-        android:hint="Type your password"
-        android:inputType="textPassword"
-        android:textAlignment="center"
-        android:textColorHint="@color/colorHintSignIn"
-        android:textSize="16sp" />
-
-    <EditText
-        android:id="@+id/userBD_EditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="6dp"
-        android:hint="Birthday date"
-        android:inputType="date"
-        android:textAlignment="center"
-        android:textColorHint="@color/colorHintSignIn"
-        android:textSize="16sp" />
-
-    <EditText
-        android:id="@+id/userDescr_EditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="6dp"
-        android:hint="Who you are ?"
-        android:textAlignment="center"
-        android:textColorHint="@color/colorHintSignIn"
-        android:textSize="16sp" />
-
-    <RadioGroup
-        android:id="@+id/gender_RadioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:minWidth="480dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gender"
-            android:textSize="18sp" />
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Male" />
+            <EditText
+                android:id="@+id/userName_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="6dp"
+                android:hint="Enter Fullname"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorHintSignIn"
+                android:textSize="16sp" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Female" />
-    </RadioGroup>
+            <EditText
+                android:id="@+id/userEmail_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="6dp"
+                android:hint="Enter e-mail"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorHintSignIn"
+                android:textSize="16sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
-        android:layout_marginTop="18dp"
-        android:background="@drawable/bg_text_view"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:text="@string/sign_up"
-        android:textColor="@color/colorBGend" />
+            <EditText
+                android:id="@+id/userPass_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="6dp"
+                android:hint="Type your password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorHintSignIn"
+                android:textSize="16sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
-        android:paddingTop="16dp">
+            <EditText
+                android:id="@+id/userBD_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="6dp"
+                android:hint="Birthday date"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorHintSignIn"
+                android:textSize="16sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Already have an accound ?"
-            android:textColor="@color/colorPrimary"
-            android:typeface="serif" />
+            <EditText
+                android:id="@+id/userDescr_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="6dp"
+                android:hint="Who you are ?"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorHintSignIn"
+                android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/sign_in_TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="18dp"
-            android:clickable="true"
-            android:text="@string/sign_in"
-            android:textAllCaps="true"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            android:typeface="serif" />
-    </LinearLayout>
+            <RadioGroup
+                android:id="@+id/gender_RadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_text_view"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="@string/sign_up"
+                android:textColor="@color/colorBGend" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an accound ?"
+                    android:textColor="@color/colorPrimary"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/sign_in_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:clickable="true"
+                    android:text="@string/sign_in"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>
