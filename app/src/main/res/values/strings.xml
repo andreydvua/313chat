@@ -6,4 +6,9 @@
     <string name="don_t_have_account">Don\'t have account ?</string>
     <string name="sign_up">Sign UP</string>
     <string name="sign_in">Sign IN</string>
+    <string name="chat">CHAT</string>
+    <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="tap_for_change_your_pass">Tap for change your password</string>
+    <string name="change_your_pass">Change your password</string>
 </resources>
